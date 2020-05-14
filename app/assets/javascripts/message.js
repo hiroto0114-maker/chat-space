@@ -4,7 +4,7 @@ $(function(){
   function buildHTML(message){
    if ( message.image ) {
      var html =
-      `<div class="chatmain__message1--list--user1" data-message-id=${message.id}>
+      `<div class="chatmain__message1" data-message-id=${message.id}>
          <div class="chatmain__message1--list--user1__upper-info">
            <div class="chatmain__message1--list--user1__upper-info__talker">
              ${message.user_name}
@@ -23,7 +23,7 @@ $(function(){
      return html;
    } else {
      var html =
-      `<div class="chatmain__message1--list--user1" data-message-id=${message.id}>
+      `<div class="chatmain__message1" data-message-id=${message.id}>
          <div class="chatmain__message1--list--user1__upper-info">
            <div class="chatmain__message1--list--user1__upper-info__talker">
              ${message.user_name}
